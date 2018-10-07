@@ -20,6 +20,14 @@ public class AdminForm extends javax.swing.JFrame {
 
         panel_bg = new javax.swing.JPanel();
         panel_navigator = new javax.swing.JPanel();
+        btn_one = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        btn_two = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        btn_three = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        btn_four = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         panel_body_basic = new javax.swing.JPanel();
         basic_info = new javax.swing.JPanel();
         lbl_name = new javax.swing.JLabel();
@@ -57,25 +65,95 @@ public class AdminForm extends javax.swing.JFrame {
 
         panel_bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panel_navigator.setBackground(new java.awt.Color(153, 153, 255));
+        panel_navigator.setBackground(new java.awt.Color(0, 102, 153));
+        panel_navigator.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout panel_navigatorLayout = new javax.swing.GroupLayout(panel_navigator);
-        panel_navigator.setLayout(panel_navigatorLayout);
-        panel_navigatorLayout.setHorizontalGroup(
-            panel_navigatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 210, Short.MAX_VALUE)
+        btn_one.setBackground(new java.awt.Color(242, 213, 103));
+
+        jLabel1.setText("Basic Information");
+
+        javax.swing.GroupLayout btn_oneLayout = new javax.swing.GroupLayout(btn_one);
+        btn_one.setLayout(btn_oneLayout);
+        btn_oneLayout.setHorizontalGroup(
+            btn_oneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btn_oneLayout.createSequentialGroup()
+                .addGap(64, 64, 64)
+                .addComponent(jLabel1)
+                .addContainerGap(63, Short.MAX_VALUE))
         );
-        panel_navigatorLayout.setVerticalGroup(
-            panel_navigatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 580, Short.MAX_VALUE)
+        btn_oneLayout.setVerticalGroup(
+            btn_oneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
         );
+
+        panel_navigator.add(btn_one, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 210, 60));
+
+        btn_two.setBackground(new java.awt.Color(242, 213, 103));
+
+        jLabel2.setText("Course Description");
+
+        javax.swing.GroupLayout btn_twoLayout = new javax.swing.GroupLayout(btn_two);
+        btn_two.setLayout(btn_twoLayout);
+        btn_twoLayout.setHorizontalGroup(
+            btn_twoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btn_twoLayout.createSequentialGroup()
+                .addGap(64, 64, 64)
+                .addComponent(jLabel2)
+                .addContainerGap(56, Short.MAX_VALUE))
+        );
+        btn_twoLayout.setVerticalGroup(
+            btn_twoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+        );
+
+        panel_navigator.add(btn_two, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 210, 60));
+
+        btn_three.setBackground(new java.awt.Color(242, 213, 103));
+
+        jLabel3.setText("Family");
+
+        javax.swing.GroupLayout btn_threeLayout = new javax.swing.GroupLayout(btn_three);
+        btn_three.setLayout(btn_threeLayout);
+        btn_threeLayout.setHorizontalGroup(
+            btn_threeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btn_threeLayout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(jLabel3)
+                .addContainerGap(92, Short.MAX_VALUE))
+        );
+        btn_threeLayout.setVerticalGroup(
+            btn_threeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+        );
+
+        panel_navigator.add(btn_three, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 210, 60));
+
+        btn_four.setBackground(new java.awt.Color(242, 213, 103));
+
+        jLabel4.setText("Validation");
+
+        javax.swing.GroupLayout btn_fourLayout = new javax.swing.GroupLayout(btn_four);
+        btn_four.setLayout(btn_fourLayout);
+        btn_fourLayout.setHorizontalGroup(
+            btn_fourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btn_fourLayout.createSequentialGroup()
+                .addGap(79, 79, 79)
+                .addComponent(jLabel4)
+                .addContainerGap(85, Short.MAX_VALUE))
+        );
+        btn_fourLayout.setVerticalGroup(
+            btn_fourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+        );
+
+        panel_navigator.add(btn_four, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 210, 60));
 
         panel_bg.add(panel_navigator, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 580));
 
-        panel_body_basic.setBackground(new java.awt.Color(255, 255, 255));
+        panel_body_basic.setBackground(new java.awt.Color(244, 243, 243));
 
-        basic_info.setBackground(new java.awt.Color(255, 255, 255));
-        basic_info.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Basic Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
+        basic_info.setBackground(new java.awt.Color(244, 243, 243));
+        basic_info.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Basic Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18), new java.awt.Color(0, 102, 153))); // NOI18N
 
         lbl_name.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbl_name.setText("Name:");
@@ -201,7 +279,7 @@ public class AdminForm extends javax.swing.JFrame {
                 .addGap(42, 42, 42))
         );
 
-        basic_educational.setBackground(new java.awt.Color(255, 255, 255));
+        basic_educational.setBackground(new java.awt.Color(244, 243, 243));
         basic_educational.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Educational Background", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
 
         name1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -355,7 +433,15 @@ public class AdminForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel basic_educational;
     private javax.swing.JPanel basic_info;
+    private javax.swing.JPanel btn_four;
     private javax.swing.JButton btn_oked;
+    private javax.swing.JPanel btn_one;
+    private javax.swing.JPanel btn_three;
+    private javax.swing.JPanel btn_two;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lbl_birthdate;
     private javax.swing.JLabel lbl_civil;
     private javax.swing.JLabel lbl_email;
