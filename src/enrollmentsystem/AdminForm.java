@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package enrollmentsystem;
 
-/**
- *
- * @author Gillian
- */
 public class AdminForm extends javax.swing.JFrame {
 
     /**
@@ -27,29 +18,9 @@ public class AdminForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        bg = new javax.swing.JPanel();
-        header = new javax.swing.JPanel();
-        lbl_HEADER = new javax.swing.JLabel();
-        btn_one = new javax.swing.JPanel();
-        lbl_basic_info = new javax.swing.JLabel();
-        btn_two = new javax.swing.JPanel();
-        lbl_course = new javax.swing.JLabel();
-        btn_four = new javax.swing.JPanel();
-        lbl_course2 = new javax.swing.JLabel();
-        btn_three = new javax.swing.JPanel();
-        lbl_course1 = new javax.swing.JLabel();
-        panel_display = new javax.swing.JPanel();
-        panel_basic = new javax.swing.JPanel();
-        basic_educational = new javax.swing.JPanel();
-        name1 = new javax.swing.JLabel();
-        level1 = new javax.swing.JLabel();
-        txtf_name1 = new javax.swing.JTextField();
-        txtf_level1 = new javax.swing.JTextField();
-        name3 = new javax.swing.JLabel();
-        txtf_name3 = new javax.swing.JTextField();
-        txtf_name4 = new javax.swing.JTextField();
-        name4 = new javax.swing.JLabel();
-        btn_oked = new javax.swing.JButton();
+        panel_bg = new javax.swing.JPanel();
+        panel_navigator = new javax.swing.JPanel();
+        panel_body_basic = new javax.swing.JPanel();
         basic_info = new javax.swing.JPanel();
         lbl_name = new javax.swing.JLabel();
         lbl_birthdate = new javax.swing.JLabel();
@@ -68,204 +39,40 @@ public class AdminForm extends javax.swing.JFrame {
         txtf_email = new javax.swing.JTextField();
         radbtn_male = new javax.swing.JRadioButton();
         radbtn_female = new javax.swing.JRadioButton();
-        btn_ok = new javax.swing.JButton();
+        basic_educational = new javax.swing.JPanel();
+        name1 = new javax.swing.JLabel();
+        level1 = new javax.swing.JLabel();
+        txtf_name1 = new javax.swing.JTextField();
+        txtf_level1 = new javax.swing.JTextField();
+        name3 = new javax.swing.JLabel();
+        txtf_name3 = new javax.swing.JTextField();
+        txtf_name4 = new javax.swing.JTextField();
+        name4 = new javax.swing.JLabel();
+        btn_oked = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panel_bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        header.setBackground(new java.awt.Color(255, 255, 255));
+        panel_navigator.setBackground(new java.awt.Color(153, 153, 255));
 
-        lbl_HEADER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/header.png"))); // NOI18N
-        lbl_HEADER.setText("jLabel1");
-
-        javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
-        header.setLayout(headerLayout);
-        headerLayout.setHorizontalGroup(
-            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(headerLayout.createSequentialGroup()
-                .addComponent(lbl_HEADER, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+        javax.swing.GroupLayout panel_navigatorLayout = new javax.swing.GroupLayout(panel_navigator);
+        panel_navigator.setLayout(panel_navigatorLayout);
+        panel_navigatorLayout.setHorizontalGroup(
+            panel_navigatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 210, Short.MAX_VALUE)
         );
-        headerLayout.setVerticalGroup(
-            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_HEADER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        panel_navigatorLayout.setVerticalGroup(
+            panel_navigatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 580, Short.MAX_VALUE)
         );
 
-        bg.add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 110));
+        panel_bg.add(panel_navigator, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 580));
 
-        btn_one.setBackground(new java.awt.Color(153, 153, 255));
-
-        lbl_basic_info.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl_basic_info.setForeground(new java.awt.Color(255, 255, 255));
-        lbl_basic_info.setText("Basic Information");
-
-        javax.swing.GroupLayout btn_oneLayout = new javax.swing.GroupLayout(btn_one);
-        btn_one.setLayout(btn_oneLayout);
-        btn_oneLayout.setHorizontalGroup(
-            btn_oneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btn_oneLayout.createSequentialGroup()
-                .addContainerGap(55, Short.MAX_VALUE)
-                .addComponent(lbl_basic_info)
-                .addGap(56, 56, 56))
-        );
-        btn_oneLayout.setVerticalGroup(
-            btn_oneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_basic_info, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-        );
-
-        bg.add(btn_one, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 210, 50));
-
-        btn_two.setBackground(new java.awt.Color(255, 153, 153));
-
-        lbl_course.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl_course.setForeground(new java.awt.Color(255, 255, 255));
-        lbl_course.setText("Course");
-
-        javax.swing.GroupLayout btn_twoLayout = new javax.swing.GroupLayout(btn_two);
-        btn_two.setLayout(btn_twoLayout);
-        btn_twoLayout.setHorizontalGroup(
-            btn_twoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btn_twoLayout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(lbl_course)
-                .addContainerGap(83, Short.MAX_VALUE))
-        );
-        btn_twoLayout.setVerticalGroup(
-            btn_twoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_course, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-        );
-
-        bg.add(btn_two, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 200, -1));
-
-        btn_four.setBackground(new java.awt.Color(153, 255, 153));
-
-        lbl_course2.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl_course2.setText("Validation");
-
-        javax.swing.GroupLayout btn_fourLayout = new javax.swing.GroupLayout(btn_four);
-        btn_four.setLayout(btn_fourLayout);
-        btn_fourLayout.setHorizontalGroup(
-            btn_fourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btn_fourLayout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(lbl_course2)
-                .addContainerGap(74, Short.MAX_VALUE))
-        );
-        btn_fourLayout.setVerticalGroup(
-            btn_fourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_course2, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-        );
-
-        bg.add(btn_four, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, 210, 50));
-
-        btn_three.setBackground(new java.awt.Color(255, 255, 102));
-
-        lbl_course1.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        lbl_course1.setText("Course");
-
-        javax.swing.GroupLayout btn_threeLayout = new javax.swing.GroupLayout(btn_three);
-        btn_three.setLayout(btn_threeLayout);
-        btn_threeLayout.setHorizontalGroup(
-            btn_threeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btn_threeLayout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(lbl_course1)
-                .addContainerGap(83, Short.MAX_VALUE))
-        );
-        btn_threeLayout.setVerticalGroup(
-            btn_threeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_course1, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
-        );
-
-        bg.add(btn_three, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 200, -1));
-
-        panel_basic.setBackground(new java.awt.Color(255, 255, 255));
-        panel_basic.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        basic_educational.setBackground(new java.awt.Color(255, 255, 255));
-        basic_educational.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Educational Background", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
-
-        name1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        name1.setText("Secondaray:");
-
-        level1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        level1.setText("Primary:");
-
-        txtf_name1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-
-        txtf_level1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-
-        name3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        name3.setText("Year Ended:");
-
-        txtf_name3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-
-        txtf_name4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-
-        name4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        name4.setText("Year Ended:");
-
-        btn_oked.setText("OK");
-
-        javax.swing.GroupLayout basic_educationalLayout = new javax.swing.GroupLayout(basic_educational);
-        basic_educational.setLayout(basic_educationalLayout);
-        basic_educationalLayout.setHorizontalGroup(
-            basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(basic_educationalLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_oked)
-                    .addGroup(basic_educationalLayout.createSequentialGroup()
-                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(level1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(name3, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(4, 4, 4)
-                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtf_level1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtf_name3, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(basic_educationalLayout.createSequentialGroup()
-                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(name4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(name1, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtf_name1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtf_name4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-        basic_educationalLayout.setVerticalGroup(
-            basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(basic_educationalLayout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(name1)
-                    .addComponent(txtf_name1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(6, 6, 6)
-                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(name4)
-                    .addComponent(txtf_name4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(basic_educationalLayout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(level1))
-                    .addComponent(txtf_level1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(basic_educationalLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(name3))
-                    .addComponent(txtf_name3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(btn_oked)
-                .addContainerGap())
-        );
-
-        panel_basic.add(basic_educational, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 410, 310));
+        panel_body_basic.setBackground(new java.awt.Color(255, 255, 255));
 
         basic_info.setBackground(new java.awt.Color(255, 255, 255));
         basic_info.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Basic Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
@@ -312,8 +119,6 @@ public class AdminForm extends javax.swing.JFrame {
 
         radbtn_female.setText("Female");
 
-        btn_ok.setText("OK");
-
         javax.swing.GroupLayout basic_infoLayout = new javax.swing.GroupLayout(basic_info);
         basic_info.setLayout(basic_infoLayout);
         basic_infoLayout.setHorizontalGroup(
@@ -325,16 +130,13 @@ public class AdminForm extends javax.swing.JFrame {
                         .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lbl_gender)
                             .addComponent(lbl_religion)
-                            .addComponent(lbl_mobile)
-                            .addComponent(lbl_email))
+                            .addComponent(lbl_mobile))
                         .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(basic_infoLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtf_religion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtf_mobile, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtf_email, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btn_ok, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                    .addComponent(txtf_mobile, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(basic_infoLayout.createSequentialGroup()
                                 .addGap(4, 4, 4)
                                 .addComponent(radbtn_male)
@@ -356,7 +158,11 @@ public class AdminForm extends javax.swing.JFrame {
                         .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtf_name, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtf_bdate, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lbl_email)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         basic_infoLayout.setVerticalGroup(
             basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -364,7 +170,9 @@ public class AdminForm extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_name)
-                    .addComponent(txtf_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtf_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_email)
+                    .addComponent(txtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lbl_birthdate)
@@ -390,45 +198,125 @@ public class AdminForm extends javax.swing.JFrame {
                 .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtf_mobile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_mobile))
+                .addGap(42, 42, 42))
+        );
+
+        basic_educational.setBackground(new java.awt.Color(255, 255, 255));
+        basic_educational.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Educational Background", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
+
+        name1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        name1.setText("Secondaray:");
+
+        level1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        level1.setText("Primary:");
+
+        txtf_name1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtf_level1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        name3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        name3.setText("Year Ended:");
+
+        txtf_name3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        txtf_name4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        name4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        name4.setText("Year Ended:");
+
+        btn_oked.setText("OK");
+
+        javax.swing.GroupLayout basic_educationalLayout = new javax.swing.GroupLayout(basic_educational);
+        basic_educational.setLayout(basic_educationalLayout);
+        basic_educationalLayout.setHorizontalGroup(
+            basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(basic_educationalLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(basic_educationalLayout.createSequentialGroup()
+                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(level1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(name3, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(4, 4, 4)
+                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtf_level1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtf_name3, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(basic_educationalLayout.createSequentialGroup()
+                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(name4, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(name1, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtf_name1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtf_name4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, basic_educationalLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_oked)
+                .addContainerGap())
+        );
+        basic_educationalLayout.setVerticalGroup(
+            basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(basic_educationalLayout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(name1)
+                    .addComponent(txtf_name1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(name4)
+                    .addComponent(txtf_name4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32)
+                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(basic_educationalLayout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(level1))
+                    .addComponent(txtf_level1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_email))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btn_ok)
+                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(basic_educationalLayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(name3))
+                    .addComponent(txtf_name3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(btn_oked)
                 .addContainerGap())
         );
 
-        panel_basic.add(basic_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 370, 310));
-
-        javax.swing.GroupLayout panel_displayLayout = new javax.swing.GroupLayout(panel_display);
-        panel_display.setLayout(panel_displayLayout);
-        panel_displayLayout.setHorizontalGroup(
-            panel_displayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 850, Short.MAX_VALUE)
-            .addGroup(panel_displayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panel_displayLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(panel_basic, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+        javax.swing.GroupLayout panel_body_basicLayout = new javax.swing.GroupLayout(panel_body_basic);
+        panel_body_basic.setLayout(panel_body_basicLayout);
+        panel_body_basicLayout.setHorizontalGroup(
+            panel_body_basicLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_body_basicLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel_body_basicLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(basic_info, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(basic_educational, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
-        panel_displayLayout.setVerticalGroup(
-            panel_displayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-            .addGroup(panel_displayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panel_displayLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(panel_basic, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+        panel_body_basicLayout.setVerticalGroup(
+            panel_body_basicLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_body_basicLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(basic_info, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(basic_educational, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(68, Short.MAX_VALUE))
         );
 
-        bg.add(panel_display, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 850, 390));
+        panel_bg.add(panel_body_basic, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 640, 580));
 
-        getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 550));
+        getContentPane().add(panel_bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 580));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public void showHome(){
+        //panel_basic.setVisible(true);
+        //panel_course.setVisible(false);
+        //panel_display.setVisible(false);
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -467,21 +355,9 @@ public class AdminForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel basic_educational;
     private javax.swing.JPanel basic_info;
-    private javax.swing.JPanel bg;
-    private javax.swing.JPanel btn_four;
-    private javax.swing.JButton btn_ok;
     private javax.swing.JButton btn_oked;
-    private javax.swing.JPanel btn_one;
-    private javax.swing.JPanel btn_three;
-    private javax.swing.JPanel btn_two;
-    private javax.swing.JPanel header;
-    private javax.swing.JLabel lbl_HEADER;
-    private javax.swing.JLabel lbl_basic_info;
     private javax.swing.JLabel lbl_birthdate;
     private javax.swing.JLabel lbl_civil;
-    private javax.swing.JLabel lbl_course;
-    private javax.swing.JLabel lbl_course1;
-    private javax.swing.JLabel lbl_course2;
     private javax.swing.JLabel lbl_email;
     private javax.swing.JLabel lbl_gender;
     private javax.swing.JLabel lbl_mobile;
@@ -492,8 +368,9 @@ public class AdminForm extends javax.swing.JFrame {
     private javax.swing.JLabel name1;
     private javax.swing.JLabel name3;
     private javax.swing.JLabel name4;
-    private javax.swing.JPanel panel_basic;
-    private javax.swing.JPanel panel_display;
+    private javax.swing.JPanel panel_bg;
+    private javax.swing.JPanel panel_body_basic;
+    private javax.swing.JPanel panel_navigator;
     private javax.swing.JRadioButton radbtn_female;
     private javax.swing.JRadioButton radbtn_male;
     public javax.swing.JTextField txtf_bdate;
