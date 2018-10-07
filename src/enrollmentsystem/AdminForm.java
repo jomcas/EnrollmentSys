@@ -29,6 +29,7 @@ public class AdminForm extends javax.swing.JFrame {
 
         bg = new javax.swing.JPanel();
         header = new javax.swing.JPanel();
+        lbl_HEADER = new javax.swing.JLabel();
         btn_one = new javax.swing.JPanel();
         lbl_basic_info = new javax.swing.JLabel();
         btn_two = new javax.swing.JPanel();
@@ -37,6 +38,7 @@ public class AdminForm extends javax.swing.JFrame {
         lbl_course2 = new javax.swing.JLabel();
         btn_three = new javax.swing.JPanel();
         lbl_course1 = new javax.swing.JLabel();
+        panel_display = new javax.swing.JPanel();
         panel_basic = new javax.swing.JPanel();
         basic_educational = new javax.swing.JPanel();
         name1 = new javax.swing.JLabel();
@@ -47,6 +49,7 @@ public class AdminForm extends javax.swing.JFrame {
         txtf_name3 = new javax.swing.JTextField();
         txtf_name4 = new javax.swing.JTextField();
         name4 = new javax.swing.JLabel();
+        btn_oked = new javax.swing.JButton();
         basic_info = new javax.swing.JPanel();
         lbl_name = new javax.swing.JLabel();
         lbl_birthdate = new javax.swing.JLabel();
@@ -65,6 +68,7 @@ public class AdminForm extends javax.swing.JFrame {
         txtf_email = new javax.swing.JTextField();
         radbtn_male = new javax.swing.JRadioButton();
         radbtn_female = new javax.swing.JRadioButton();
+        btn_ok = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -73,17 +77,22 @@ public class AdminForm extends javax.swing.JFrame {
 
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        header.setBackground(new java.awt.Color(10, 96, 159));
+        header.setBackground(new java.awt.Color(255, 255, 255));
+
+        lbl_HEADER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/header.png"))); // NOI18N
+        lbl_HEADER.setText("jLabel1");
 
         javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
         header.setLayout(headerLayout);
         headerLayout.setHorizontalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 850, Short.MAX_VALUE)
+            .addGroup(headerLayout.createSequentialGroup()
+                .addComponent(lbl_HEADER, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         headerLayout.setVerticalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 110, Short.MAX_VALUE)
+            .addComponent(lbl_HEADER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         bg.add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 110));
@@ -200,6 +209,8 @@ public class AdminForm extends javax.swing.JFrame {
         name4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         name4.setText("Year Ended:");
 
+        btn_oked.setText("OK");
+
         javax.swing.GroupLayout basic_educationalLayout = new javax.swing.GroupLayout(basic_educational);
         basic_educational.setLayout(basic_educationalLayout);
         basic_educationalLayout.setHorizontalGroup(
@@ -207,6 +218,7 @@ public class AdminForm extends javax.swing.JFrame {
             .addGroup(basic_educationalLayout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_oked)
                     .addGroup(basic_educationalLayout.createSequentialGroup()
                         .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(level1, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -248,10 +260,12 @@ public class AdminForm extends javax.swing.JFrame {
                         .addGap(3, 3, 3)
                         .addComponent(name3))
                     .addComponent(txtf_name3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(btn_oked)
                 .addContainerGap())
         );
 
-        panel_basic.add(basic_educational, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, 410, 310));
+        panel_basic.add(basic_educational, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 410, 310));
 
         basic_info.setBackground(new java.awt.Color(255, 255, 255));
         basic_info.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Basic Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
@@ -298,6 +312,8 @@ public class AdminForm extends javax.swing.JFrame {
 
         radbtn_female.setText("Female");
 
+        btn_ok.setText("OK");
+
         javax.swing.GroupLayout basic_infoLayout = new javax.swing.GroupLayout(basic_info);
         basic_info.setLayout(basic_infoLayout);
         basic_infoLayout.setHorizontalGroup(
@@ -317,7 +333,8 @@ public class AdminForm extends javax.swing.JFrame {
                                 .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtf_religion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtf_mobile, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtf_email, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(txtf_email, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn_ok, javax.swing.GroupLayout.Alignment.TRAILING)))
                             .addGroup(basic_infoLayout.createSequentialGroup()
                                 .addGap(4, 4, 4)
                                 .addComponent(radbtn_male)
@@ -377,12 +394,35 @@ public class AdminForm extends javax.swing.JFrame {
                 .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_email))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btn_ok)
                 .addContainerGap())
         );
 
-        panel_basic.add(basic_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 370, 310));
+        panel_basic.add(basic_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 370, 310));
 
-        bg.add(panel_basic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 850, 390));
+        javax.swing.GroupLayout panel_displayLayout = new javax.swing.GroupLayout(panel_display);
+        panel_display.setLayout(panel_displayLayout);
+        panel_displayLayout.setHorizontalGroup(
+            panel_displayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 850, Short.MAX_VALUE)
+            .addGroup(panel_displayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_displayLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_basic, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        panel_displayLayout.setVerticalGroup(
+            panel_displayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
+            .addGroup(panel_displayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_displayLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_basic, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        bg.add(panel_display, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 850, 390));
 
         getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 550));
 
@@ -429,10 +469,13 @@ public class AdminForm extends javax.swing.JFrame {
     private javax.swing.JPanel basic_info;
     private javax.swing.JPanel bg;
     private javax.swing.JPanel btn_four;
+    private javax.swing.JButton btn_ok;
+    private javax.swing.JButton btn_oked;
     private javax.swing.JPanel btn_one;
     private javax.swing.JPanel btn_three;
     private javax.swing.JPanel btn_two;
     private javax.swing.JPanel header;
+    private javax.swing.JLabel lbl_HEADER;
     private javax.swing.JLabel lbl_basic_info;
     private javax.swing.JLabel lbl_birthdate;
     private javax.swing.JLabel lbl_civil;
@@ -450,6 +493,7 @@ public class AdminForm extends javax.swing.JFrame {
     private javax.swing.JLabel name3;
     private javax.swing.JLabel name4;
     private javax.swing.JPanel panel_basic;
+    private javax.swing.JPanel panel_display;
     private javax.swing.JRadioButton radbtn_female;
     private javax.swing.JRadioButton radbtn_male;
     public javax.swing.JTextField txtf_bdate;
