@@ -151,6 +151,7 @@ public class AdminForm extends javax.swing.JFrame {
         panel_bg.add(panel_navigator, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 580));
 
         panel_body_basic.setBackground(new java.awt.Color(244, 243, 243));
+        panel_body_basic.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         basic_info.setBackground(new java.awt.Color(244, 243, 243));
         basic_info.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Basic Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18), new java.awt.Color(0, 102, 153))); // NOI18N
@@ -279,6 +280,8 @@ public class AdminForm extends javax.swing.JFrame {
                 .addGap(42, 42, 42))
         );
 
+        panel_body_basic.add(basic_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 23, -1, 255));
+
         basic_educational.setBackground(new java.awt.Color(244, 243, 243));
         basic_educational.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Educational Background", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
 
@@ -361,26 +364,7 @@ public class AdminForm extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout panel_body_basicLayout = new javax.swing.GroupLayout(panel_body_basic);
-        panel_body_basic.setLayout(panel_body_basicLayout);
-        panel_body_basicLayout.setHorizontalGroup(
-            panel_body_basicLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_body_basicLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(panel_body_basicLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(basic_info, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(basic_educational, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        panel_body_basicLayout.setVerticalGroup(
-            panel_body_basicLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_body_basicLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(basic_info, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(basic_educational, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(68, Short.MAX_VALUE))
-        );
+        panel_body_basic.add(basic_educational, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 289, 620, -1));
 
         panel_bg.add(panel_body_basic, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 640, 580));
 

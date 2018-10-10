@@ -30,11 +30,8 @@ public class MainForm extends javax.swing.JFrame {
         bg = new javax.swing.JPanel();
         header = new javax.swing.JPanel();
         panel_main = new javax.swing.JPanel();
-        btn_admin = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        btn_user = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        pic = new javax.swing.JPanel();
+        btn_courses = new javax.swing.JButton();
+        btn_admin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -59,38 +56,11 @@ public class MainForm extends javax.swing.JFrame {
         panel_main.setBackground(new java.awt.Color(255, 255, 255));
         panel_main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_admin.setBackground(new java.awt.Color(249, 234, 129));
-        btn_admin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btn_courses.setText("Courses");
+        panel_main.add(btn_courses, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 180, 60));
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Admin");
-        btn_admin.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 70, 50));
-
-        panel_main.add(btn_admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 250, 230, -1));
-
-        btn_user.setBackground(new java.awt.Color(249, 234, 129));
-        btn_user.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel2.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("User");
-        btn_user.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 70, 50));
-
-        panel_main.add(btn_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, 230, -1));
-
-        javax.swing.GroupLayout picLayout = new javax.swing.GroupLayout(pic);
-        pic.setLayout(picLayout);
-        picLayout.setHorizontalGroup(
-            picLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 230, Short.MAX_VALUE)
-        );
-        picLayout.setVerticalGroup(
-            picLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 190, Short.MAX_VALUE)
-        );
-
-        panel_main.add(pic, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, 230, 190));
+        btn_admin.setText("Admin");
+        panel_main.add(btn_admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 180, 60));
 
         bg.add(panel_main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 850, 380));
 
@@ -99,6 +69,7 @@ public class MainForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
     /**
      * @param args the command line arguments
      */
@@ -136,12 +107,9 @@ public class MainForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
-    private javax.swing.JPanel btn_admin;
-    private javax.swing.JPanel btn_user;
+    private javax.swing.JButton btn_admin;
+    private javax.swing.JButton btn_courses;
     private javax.swing.JPanel header;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel panel_main;
-    private javax.swing.JPanel pic;
     // End of variables declaration//GEN-END:variables
 }
