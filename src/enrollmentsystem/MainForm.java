@@ -60,6 +60,11 @@ public class MainForm extends javax.swing.JFrame {
         panel_main.add(btn_courses, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 180, 60));
 
         btn_admin.setText("Admin");
+        btn_admin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_adminActionPerformed(evt);
+            }
+        });
         panel_main.add(btn_admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 180, 60));
 
         bg.add(panel_main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 850, 380));
@@ -69,7 +74,15 @@ public class MainForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
+    private void btn_adminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_adminActionPerformed
+        //showing the mainform
+        AdminForm af = new AdminForm();
+        af.setVisible(true);
+        af.pack();
+        af.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btn_adminActionPerformed
+
     /**
      * @param args the command line arguments
      */
