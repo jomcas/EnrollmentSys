@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package enrollmentsystem;
 
-/**
- *
- * @author Gillian
- */
 public class MainForm extends javax.swing.JFrame {
 
     /**
@@ -56,9 +47,16 @@ public class MainForm extends javax.swing.JFrame {
         panel_main.setBackground(new java.awt.Color(255, 255, 255));
         panel_main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_courses.setText("Courses");
+        btn_courses.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_courses.setText("View Courses");
+        btn_courses.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_coursesActionPerformed(evt);
+            }
+        });
         panel_main.add(btn_courses, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 180, 60));
 
+        btn_admin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn_admin.setText("Admin");
         btn_admin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,6 +80,15 @@ public class MainForm extends javax.swing.JFrame {
         af.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_btn_adminActionPerformed
+
+    private void btn_coursesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_coursesActionPerformed
+        //showing the viewcourses form
+        ViewCourses vc = new ViewCourses();
+        vc.setVisible(true);
+        vc.pack();
+        vc.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_btn_coursesActionPerformed
 
     /**
      * @param args the command line arguments
