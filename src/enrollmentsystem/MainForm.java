@@ -23,6 +23,7 @@ public class MainForm extends javax.swing.JFrame {
         panel_main = new javax.swing.JPanel();
         btn_courses = new javax.swing.JButton();
         btn_admin = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -64,6 +65,10 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
         panel_main.add(btn_admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 180, 60));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/smol.png"))); // NOI18N
+        jLabel1.setPreferredSize(new java.awt.Dimension(34, 15));
+        panel_main.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 510, 130));
 
         bg.add(panel_main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 850, 380));
 
@@ -130,6 +135,7 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JButton btn_admin;
     private javax.swing.JButton btn_courses;
     private javax.swing.JPanel header;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel panel_main;
     // End of variables declaration//GEN-END:variables
 }
