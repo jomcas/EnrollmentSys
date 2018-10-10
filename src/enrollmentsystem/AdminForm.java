@@ -19,21 +19,14 @@ public class AdminForm extends javax.swing.JFrame {
     private void initComponents() {
 
         panel_bg = new javax.swing.JPanel();
-        panel_navigator = new javax.swing.JPanel();
-        btn_one = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        btn_two = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        btn_three = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        btn_four = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        panel_body_basic = new javax.swing.JPanel();
+        tab_validation = new javax.swing.JTabbedPane();
+        tab_basic = new javax.swing.JPanel();
         basic_info = new javax.swing.JPanel();
         lbl_name = new javax.swing.JLabel();
         lbl_birthdate = new javax.swing.JLabel();
         lbl_nationality = new javax.swing.JLabel();
-        txtf_name = new javax.swing.JTextField();
+        txtf_surname = new javax.swing.JTextField();
         txtf_nationality = new javax.swing.JTextField();
         txtf_bdate = new javax.swing.JTextField();
         txtf_civil = new javax.swing.JTextField();
@@ -47,16 +40,43 @@ public class AdminForm extends javax.swing.JFrame {
         txtf_email = new javax.swing.JTextField();
         radbtn_male = new javax.swing.JRadioButton();
         radbtn_female = new javax.swing.JRadioButton();
-        basic_educational = new javax.swing.JPanel();
+        txtf_fname = new javax.swing.JTextField();
+        txtf_mname = new javax.swing.JTextField();
         name1 = new javax.swing.JLabel();
-        level1 = new javax.swing.JLabel();
         txtf_name1 = new javax.swing.JTextField();
-        txtf_level1 = new javax.swing.JTextField();
-        name3 = new javax.swing.JLabel();
-        txtf_name3 = new javax.swing.JTextField();
         txtf_name4 = new javax.swing.JTextField();
         name4 = new javax.swing.JLabel();
-        btn_oked = new javax.swing.JButton();
+        txtf_level1 = new javax.swing.JTextField();
+        level1 = new javax.swing.JLabel();
+        txtf_name3 = new javax.swing.JTextField();
+        name3 = new javax.swing.JLabel();
+        basic_educational = new javax.swing.JPanel();
+        btn_ok = new javax.swing.JButton();
+        btn_reset = new javax.swing.JButton();
+        lbl_mother = new javax.swing.JLabel();
+        lbl_father = new javax.swing.JLabel();
+        lbl_foccu = new javax.swing.JLabel();
+        lbl_moccu = new javax.swing.JLabel();
+        lbl_mcontact = new javax.swing.JLabel();
+        lbl_fcontact = new javax.swing.JLabel();
+        txtf_mothern = new javax.swing.JTextField();
+        txtf_fathern = new javax.swing.JTextField();
+        txtf_motherocc = new javax.swing.JTextField();
+        txtf_fatherocc = new javax.swing.JTextField();
+        txtf_mnum = new javax.swing.JTextField();
+        txtf_fnum = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        lbl_college = new javax.swing.JLabel();
+        lbl_ayear = new javax.swing.JLabel();
+        lbl_course = new javax.swing.JLabel();
+        lbl_sem = new javax.swing.JLabel();
+        lbl_yearlev = new javax.swing.JLabel();
+        cbox_course = new javax.swing.JComboBox<>();
+        cbox_college = new javax.swing.JComboBox<>();
+        cbox_semester = new javax.swing.JComboBox<>();
+        cbox_year = new javax.swing.JComboBox<>();
+        txtf_ayear = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -65,96 +85,14 @@ public class AdminForm extends javax.swing.JFrame {
 
         panel_bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panel_navigator.setBackground(new java.awt.Color(0, 102, 153));
-        panel_navigator.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/header.png"))); // NOI18N
+        panel_bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 110));
 
-        btn_one.setBackground(new java.awt.Color(242, 213, 103));
+        tab_basic.setBackground(new java.awt.Color(255, 255, 255));
+        tab_basic.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Basic Information");
-
-        javax.swing.GroupLayout btn_oneLayout = new javax.swing.GroupLayout(btn_one);
-        btn_one.setLayout(btn_oneLayout);
-        btn_oneLayout.setHorizontalGroup(
-            btn_oneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btn_oneLayout.createSequentialGroup()
-                .addGap(64, 64, 64)
-                .addComponent(jLabel1)
-                .addContainerGap(63, Short.MAX_VALUE))
-        );
-        btn_oneLayout.setVerticalGroup(
-            btn_oneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-        );
-
-        panel_navigator.add(btn_one, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 210, 60));
-
-        btn_two.setBackground(new java.awt.Color(242, 213, 103));
-
-        jLabel2.setText("Course Description");
-
-        javax.swing.GroupLayout btn_twoLayout = new javax.swing.GroupLayout(btn_two);
-        btn_two.setLayout(btn_twoLayout);
-        btn_twoLayout.setHorizontalGroup(
-            btn_twoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btn_twoLayout.createSequentialGroup()
-                .addGap(64, 64, 64)
-                .addComponent(jLabel2)
-                .addContainerGap(56, Short.MAX_VALUE))
-        );
-        btn_twoLayout.setVerticalGroup(
-            btn_twoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-        );
-
-        panel_navigator.add(btn_two, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 210, 60));
-
-        btn_three.setBackground(new java.awt.Color(242, 213, 103));
-
-        jLabel3.setText("Family");
-
-        javax.swing.GroupLayout btn_threeLayout = new javax.swing.GroupLayout(btn_three);
-        btn_three.setLayout(btn_threeLayout);
-        btn_threeLayout.setHorizontalGroup(
-            btn_threeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btn_threeLayout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addComponent(jLabel3)
-                .addContainerGap(92, Short.MAX_VALUE))
-        );
-        btn_threeLayout.setVerticalGroup(
-            btn_threeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-        );
-
-        panel_navigator.add(btn_three, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 210, 60));
-
-        btn_four.setBackground(new java.awt.Color(242, 213, 103));
-
-        jLabel4.setText("Validation");
-
-        javax.swing.GroupLayout btn_fourLayout = new javax.swing.GroupLayout(btn_four);
-        btn_four.setLayout(btn_fourLayout);
-        btn_fourLayout.setHorizontalGroup(
-            btn_fourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btn_fourLayout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(jLabel4)
-                .addContainerGap(85, Short.MAX_VALUE))
-        );
-        btn_fourLayout.setVerticalGroup(
-            btn_fourLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-        );
-
-        panel_navigator.add(btn_four, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 210, 60));
-
-        panel_bg.add(panel_navigator, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 580));
-
-        panel_body_basic.setBackground(new java.awt.Color(244, 243, 243));
-        panel_body_basic.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        basic_info.setBackground(new java.awt.Color(244, 243, 243));
-        basic_info.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Basic Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18), new java.awt.Color(0, 102, 153))); // NOI18N
+        basic_info.setBackground(new java.awt.Color(255, 255, 255));
+        basic_info.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Basic Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
 
         lbl_name.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbl_name.setText("Name:");
@@ -165,7 +103,7 @@ public class AdminForm extends javax.swing.JFrame {
         lbl_nationality.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbl_nationality.setText("Nationality:");
 
-        txtf_name.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        txtf_surname.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         txtf_nationality.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
@@ -198,175 +136,353 @@ public class AdminForm extends javax.swing.JFrame {
 
         radbtn_female.setText("Female");
 
-        javax.swing.GroupLayout basic_infoLayout = new javax.swing.GroupLayout(basic_info);
-        basic_info.setLayout(basic_infoLayout);
-        basic_infoLayout.setHorizontalGroup(
-            basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(basic_infoLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(basic_infoLayout.createSequentialGroup()
-                        .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbl_gender)
-                            .addComponent(lbl_religion)
-                            .addComponent(lbl_mobile))
-                        .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(basic_infoLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtf_religion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtf_mobile, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(basic_infoLayout.createSequentialGroup()
-                                .addGap(4, 4, 4)
-                                .addComponent(radbtn_male)
-                                .addGap(18, 18, 18)
-                                .addComponent(radbtn_female))))
-                    .addGroup(basic_infoLayout.createSequentialGroup()
-                        .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbl_nationality)
-                            .addComponent(lbl_civil))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtf_civil, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtf_nationality, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(basic_infoLayout.createSequentialGroup()
-                        .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbl_name, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbl_birthdate, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtf_name, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtf_bdate, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lbl_email)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(36, Short.MAX_VALUE))
-        );
-        basic_infoLayout.setVerticalGroup(
-            basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(basic_infoLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_name)
-                    .addComponent(txtf_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_email)
-                    .addComponent(txtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lbl_birthdate)
-                    .addComponent(txtf_bdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtf_nationality, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_nationality))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtf_civil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_civil))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_gender)
-                    .addComponent(radbtn_male)
-                    .addComponent(radbtn_female))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtf_religion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_religion))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtf_mobile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbl_mobile))
-                .addGap(42, 42, 42))
-        );
+        txtf_fname.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
-        panel_body_basic.add(basic_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 23, -1, 255));
-
-        basic_educational.setBackground(new java.awt.Color(244, 243, 243));
-        basic_educational.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Educational Background", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
+        txtf_mname.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         name1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         name1.setText("Secondaray:");
 
-        level1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        level1.setText("Primary:");
-
         txtf_name1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-
-        txtf_level1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-
-        name3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        name3.setText("Year Ended:");
-
-        txtf_name3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         txtf_name4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         name4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         name4.setText("Year Ended:");
 
-        btn_oked.setText("OK");
+        txtf_level1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        level1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        level1.setText("Primary:");
+
+        txtf_name3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        name3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        name3.setText("Year Ended:");
+
+        javax.swing.GroupLayout basic_infoLayout = new javax.swing.GroupLayout(basic_info);
+        basic_info.setLayout(basic_infoLayout);
+        basic_infoLayout.setHorizontalGroup(
+            basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(basic_infoLayout.createSequentialGroup()
+                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(basic_infoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(basic_infoLayout.createSequentialGroup()
+                                .addComponent(level1)
+                                .addGap(4, 4, 4)
+                                .addComponent(txtf_level1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(basic_infoLayout.createSequentialGroup()
+                                .addComponent(name1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_name1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(basic_infoLayout.createSequentialGroup()
+                                .addComponent(name4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_name4, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(basic_infoLayout.createSequentialGroup()
+                                .addComponent(name3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_name3))))
+                    .addGroup(basic_infoLayout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(lbl_name)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtf_surname, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtf_fname, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtf_mname, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lbl_gender)
+                        .addGap(4, 4, 4)
+                        .addComponent(radbtn_male)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(radbtn_female))
+                    .addGroup(basic_infoLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(basic_infoLayout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(lbl_religion)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_religion, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lbl_mobile)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_mobile, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lbl_email)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(basic_infoLayout.createSequentialGroup()
+                                .addComponent(lbl_birthdate)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_bdate, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lbl_nationality)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_nationality, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lbl_civil)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_civil, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+        basic_infoLayout.setVerticalGroup(
+            basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(basic_infoLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_name)
+                    .addComponent(txtf_surname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtf_fname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtf_mname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_gender)
+                    .addComponent(radbtn_male)
+                    .addComponent(radbtn_female))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lbl_birthdate)
+                    .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtf_bdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtf_nationality, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbl_nationality)
+                        .addComponent(txtf_civil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbl_civil)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtf_religion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbl_religion))
+                    .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtf_mobile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbl_email))
+                    .addComponent(lbl_mobile))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(name1)
+                    .addComponent(txtf_name1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(name4)
+                    .addComponent(txtf_name4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(basic_infoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(basic_infoLayout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(level1))
+                    .addComponent(txtf_level1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(basic_infoLayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(name3))
+                    .addComponent(txtf_name3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        tab_basic.add(basic_info, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 800, 220));
+
+        basic_educational.setBackground(new java.awt.Color(255, 255, 255));
+        basic_educational.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Family Background", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Impact", 0, 18))); // NOI18N
+
+        btn_ok.setText("OK");
+
+        btn_reset.setText("Reset");
+
+        lbl_mother.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_mother.setText("Mother's name:");
+
+        lbl_father.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_father.setText("Father's name:");
+
+        lbl_foccu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_foccu.setText("Occupation:");
+
+        lbl_moccu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_moccu.setText("Occupation:");
+
+        lbl_mcontact.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_mcontact.setText("Contact #:");
+
+        lbl_fcontact.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_fcontact.setText("Contact #:");
 
         javax.swing.GroupLayout basic_educationalLayout = new javax.swing.GroupLayout(basic_educational);
         basic_educational.setLayout(basic_educationalLayout);
         basic_educationalLayout.setHorizontalGroup(
-            basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(basic_educationalLayout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+            basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, basic_educationalLayout.createSequentialGroup()
+                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(basic_educationalLayout.createSequentialGroup()
-                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(level1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(name3, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(4, 4, 4)
-                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtf_level1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtf_name3, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btn_reset, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_ok, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(basic_educationalLayout.createSequentialGroup()
-                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(name4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(name1, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addContainerGap()
+                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lbl_mother, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lbl_father, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtf_mothern)
+                            .addComponent(txtf_fathern, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 5, Short.MAX_VALUE)
+                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lbl_moccu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lbl_foccu))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtf_name1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtf_name4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, basic_educationalLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn_oked)
-                .addContainerGap())
+                            .addComponent(txtf_motherocc, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtf_fatherocc, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(basic_educationalLayout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addComponent(lbl_mcontact)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_mnum, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(basic_educationalLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lbl_fcontact, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtf_fnum, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(19, 19, 19))
         );
         basic_educationalLayout.setVerticalGroup(
             basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(basic_educationalLayout.createSequentialGroup()
-                .addGap(11, 11, 11)
+                .addContainerGap()
                 .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(name1)
-                    .addComponent(txtf_name1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(6, 6, 6)
+                    .addComponent(lbl_mother)
+                    .addComponent(lbl_moccu)
+                    .addComponent(txtf_mothern, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtf_motherocc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtf_mnum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_mcontact))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(name4)
-                    .addComponent(txtf_name4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(basic_educationalLayout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(level1))
-                    .addComponent(txtf_level1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(basic_educationalLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(name3))
-                    .addComponent(txtf_name3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(btn_oked)
+                    .addComponent(lbl_father)
+                    .addComponent(lbl_foccu)
+                    .addComponent(txtf_fathern, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtf_fatherocc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtf_fnum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_fcontact))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addGroup(basic_educationalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_ok)
+                    .addComponent(btn_reset))
                 .addContainerGap())
         );
 
-        panel_body_basic.add(basic_educational, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 289, 620, -1));
+        tab_basic.add(basic_educational, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 800, 190));
 
-        panel_bg.add(panel_body_basic, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 640, 580));
+        tab_validation.addTab("Basic Information", tab_basic);
+
+        lbl_college.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbl_college.setText("College of:");
+
+        lbl_ayear.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbl_ayear.setText("Academic Year:");
+
+        lbl_course.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbl_course.setText("Course:");
+
+        lbl_sem.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbl_sem.setText("Semester:");
+
+        lbl_yearlev.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbl_yearlev.setText("Year/Level:");
+
+        cbox_course.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cbox_course.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        cbox_college.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cbox_college.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        cbox_semester.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cbox_semester.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        cbox_year.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cbox_year.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        txtf_ayear.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(lbl_course)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cbox_course, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(lbl_college)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cbox_college, 0, 318, Short.MAX_VALUE)))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(lbl_ayear)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtf_ayear, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbl_sem, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lbl_yearlev, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cbox_semester, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cbox_year, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(110, 110, 110))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbl_course)
+                        .addComponent(cbox_course, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbl_ayear)
+                        .addComponent(txtf_ayear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbl_college)
+                        .addComponent(cbox_college, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbl_sem)
+                        .addComponent(cbox_semester, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_yearlev)
+                    .addComponent(cbox_year, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        tab_validation.addTab("Course Description", jPanel2);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 845, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 502, Short.MAX_VALUE)
+        );
+
+        tab_validation.addTab("Validation", jPanel3);
+
+        panel_bg.add(tab_validation, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 850, 530));
 
         getContentPane().add(panel_bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 580));
 
@@ -417,42 +533,62 @@ public class AdminForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel basic_educational;
     private javax.swing.JPanel basic_info;
-    private javax.swing.JPanel btn_four;
-    private javax.swing.JButton btn_oked;
-    private javax.swing.JPanel btn_one;
-    private javax.swing.JPanel btn_three;
-    private javax.swing.JPanel btn_two;
+    private javax.swing.JButton btn_ok;
+    private javax.swing.JButton btn_reset;
+    private javax.swing.JComboBox<String> cbox_college;
+    private javax.swing.JComboBox<String> cbox_course;
+    private javax.swing.JComboBox<String> cbox_semester;
+    private javax.swing.JComboBox<String> cbox_year;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel lbl_ayear;
     private javax.swing.JLabel lbl_birthdate;
     private javax.swing.JLabel lbl_civil;
+    private javax.swing.JLabel lbl_college;
+    private javax.swing.JLabel lbl_course;
     private javax.swing.JLabel lbl_email;
+    private javax.swing.JLabel lbl_father;
+    private javax.swing.JLabel lbl_fcontact;
+    private javax.swing.JLabel lbl_foccu;
     private javax.swing.JLabel lbl_gender;
+    private javax.swing.JLabel lbl_mcontact;
     private javax.swing.JLabel lbl_mobile;
+    private javax.swing.JLabel lbl_moccu;
+    private javax.swing.JLabel lbl_mother;
     private javax.swing.JLabel lbl_name;
     private javax.swing.JLabel lbl_nationality;
     private javax.swing.JLabel lbl_religion;
+    private javax.swing.JLabel lbl_sem;
+    private javax.swing.JLabel lbl_yearlev;
     private javax.swing.JLabel level1;
     private javax.swing.JLabel name1;
     private javax.swing.JLabel name3;
     private javax.swing.JLabel name4;
     private javax.swing.JPanel panel_bg;
-    private javax.swing.JPanel panel_body_basic;
-    private javax.swing.JPanel panel_navigator;
     private javax.swing.JRadioButton radbtn_female;
     private javax.swing.JRadioButton radbtn_male;
+    private javax.swing.JPanel tab_basic;
+    private javax.swing.JTabbedPane tab_validation;
+    private javax.swing.JTextField txtf_ayear;
     public javax.swing.JTextField txtf_bdate;
     public javax.swing.JTextField txtf_civil;
     public javax.swing.JTextField txtf_email;
+    private javax.swing.JTextField txtf_fathern;
+    private javax.swing.JTextField txtf_fatherocc;
+    public javax.swing.JTextField txtf_fname;
+    private javax.swing.JTextField txtf_fnum;
     public javax.swing.JTextField txtf_level1;
+    public javax.swing.JTextField txtf_mname;
+    private javax.swing.JTextField txtf_mnum;
     public javax.swing.JTextField txtf_mobile;
-    public javax.swing.JTextField txtf_name;
+    private javax.swing.JTextField txtf_mothern;
+    private javax.swing.JTextField txtf_motherocc;
     public javax.swing.JTextField txtf_name1;
     public javax.swing.JTextField txtf_name3;
     public javax.swing.JTextField txtf_name4;
     public javax.swing.JTextField txtf_nationality;
     public javax.swing.JTextField txtf_religion;
+    public javax.swing.JTextField txtf_surname;
     // End of variables declaration//GEN-END:variables
 }
