@@ -57,10 +57,10 @@ public class MainForm extends javax.swing.JFrame {
         panel_main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_courses.setText("Courses");
-        panel_main.add(btn_courses, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 180, 60));
+        panel_main.add(btn_courses, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 180, 60));
 
         btn_admin.setText("Admin");
-        panel_main.add(btn_admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 180, 60));
+        panel_main.add(btn_admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 180, 60));
 
         bg.add(panel_main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 850, 380));
 
